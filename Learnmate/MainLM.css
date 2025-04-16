@@ -1,0 +1,311 @@
+.body {
+    display: flex;
+    margin: auto;
+    margin-top: 15vh;
+    background-color: rgb(242, 209, 213);
+    height: 70vh;
+    width: 70vw;
+    border-radius: 10px;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 50;
+}
+
+.imgModify {
+    margin-top: 2px;
+    width: 1.6rem;
+    height: auto;
+}
+
+p {
+    color: rgb(68, 89, 195);
+}
+
+#p1 {
+    font-size: 0.8rem;
+}
+
+.InsideLB {
+    background-color: inherit;
+    width: 45vw;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.hr_modify1 {
+    box-sizing: border-box;
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    border-top: 0.3vh solid rgb(238, 134, 146);
+    border-style: hidden;
+}
+
+
+.circleParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Circle-bilog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(41, 33, 190);
+    border-radius: 10rem;
+    padding-top: 0.09em;
+}
+
+.Circle-bilog:hover {
+    background-color: rgb(71, 65, 189);
+    transform: scale(1.1);
+}
+
+.Circle-bilog:active {
+    background-color: rgb(71, 65, 189);
+    transform: scale(0.99);
+}
+
+
+
+#imgEdit {
+    position: relative;
+    /* Container needs positioning context */
+    width: 100%;
+    /* Or your desired input width */
+}
+
+#imgEdit img {
+    position: absolute;
+    left: 25%;
+    /* Percentage-based positioning */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Perfect vertical centering */
+    width: 16px;
+    /* Fixed size or use % for scaling */
+    height: 16px;
+    pointer-events: none;
+    /* Lets clicks pass through to input */
+    z-index: 2;
+}
+
+
+.textDecoration:link,
+.textDecoration:visited {
+    text-decoration: none;
+    color:
+        rgb(0, 0, 0);
+}
+
+.textBox {
+    padding-left: 28px;
+    position: absolute;
+    height: 5.6vh;
+    width: 22vw;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(233, 155, 187);
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.h1textColor1 {
+    color: rgb(154, 31, 46);
+
+}
+
+.h1textColor2 {
+    color: rgb(227, 120, 124);
+}
+
+.h1textColor3 {
+    color: rgb(52, 52, 253);
+}
+
+
+
+#forgotButton:hover {
+    transform: scale(1.1);
+}
+
+#forgotButton:active {
+    transform: scale(0.99);
+}
+
+
+
+#button1 {
+    background-color: rgb(233, 155, 187);
+}
+
+#button1:hover {
+    background-color: rgb(242, 137, 181);
+    
+}
+
+#button1:active {
+    background-color: rgb(241, 108, 164);
+    transform: scale(0.95);
+}
+
+#button2 {
+    background-color: rgb(77, 121, 255);
+}
+
+#button2:hover {
+    background-color: rgb(40, 94, 253);
+    
+}
+
+#button2:active {
+    background-color: rgb(0, 64, 255);
+    transform: scale(0.95);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 12.5vw;
+    border-radius: 35px;
+    border-color: inherit;
+    font-family: Arial;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.GridDIv {
+    display: grid;
+    height: 35vh;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+
+}
+
+.column {
+
+    display: flex;
+    width: 46.6vw;
+    height: 5vh;
+    margin-top: 0.9em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.InsideRB {
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(152, 199, 226);
+    width: 35vw;
+    height: 70vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buttonParentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 769px) {
+    .body {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .body {
+
+        margin-top: 0vh;
+        height: 95vh;
+        width: 80vw;
+
+    }
+
+    .InsideLB {
+
+        padding: 0px;
+        min-width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+
+    }
+
+    .GridDIv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textBox {
+        width: 80%;
+
+    }
+
+    #imgEdit img {
+        left: 7%;
+    }
+
+    .button {
+        width: 25vw;
+    }
+
+    .hr_modify1 {
+
+
+        top: 3%;
+        width: 80%;
+        border-style: inset;
+        border-color: rgb(238, 134, 146);
+    }
+
+
+    .hr_modify2 {
+        border-style: hidden;
+    }
+
+
+
+    .InsideRB {
+        min-width: 100%;
+        height: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-sizing: border-box;
+
+
+    }
+
+
+
+
+
+
+}

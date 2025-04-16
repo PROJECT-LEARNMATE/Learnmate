@@ -1,0 +1,166 @@
+body {
+    height: 100vh;
+    display: flex;  
+    justify-content: center; 
+    align-items: center;   
+    background-color: rgb(242, 209, 213); 
+    font-family: "Varela Round", sans-serif;
+   
+  }
+
+  .rectangle{
+    width: 700px;
+    height: 400px;
+    background-color: rgba(255, 235, 235, 1);
+    border-radius: 30px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .create{
+    position: relative;
+    top: 10px;
+    left: 250px;
+    font-style: normal;
+    color: rgba(18, 61, 106, 1);
+  }
+ 
+.form-container{
+    text-align: left;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.input-username{
+    position: relative;
+    display: block;
+    left: 80px;
+    top: 10px;
+    color: rgba(18, 61, 106, 0.8);
+}
+input[type="username"]{
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 10px;
+    background-color: rgba(218, 144, 165, 1) ;
+    width: 225px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    text-indent: 10px;
+    color: rgb(25, 46, 68);
+}
+.input-email{
+    position: relative;
+    display: block;
+    left: 375px;
+    top: -50px;
+    color: rgba(18, 61, 106, 0.8);
+}
+input[type="email"]{
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 10px;
+    background-color: rgba(218, 144, 165, 1) ;
+    width: 225px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    text-indent: 10px;
+    color: rgb(25, 46, 68);
+}
+
+
+.input-password{
+    position: relative;
+    display: block;
+    left: 80px;
+    top: -20px;
+    color: rgba(18, 61, 106, 0.8);
+}
+input[type="password"]{
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 20px;
+    background-color: rgba(218, 144, 165, 1) ;
+    width: 225px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    text-indent: 10px;
+    color: rgb(25, 46, 68);
+}
+
+.input-cpassword{
+    position: relative;
+    display: block;
+    left: 375px;
+    top: -62px;
+}
+input[type="password"]{
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 10px;
+    background-color: rgba(218, 144, 165, 1) ;
+    width: 225px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    text-indent: 10px;
+    color: rgb(25, 46, 68);
+}
+input::placeholder {
+    color: rgba(4, 35, 68, 0.651);
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    gap: 6px;
+    margin-top: -30px;
+    font-size: 14px;
+}
+
+
+button {
+    display: block; 
+    margin: 5px auto; 
+    background-color: rgba(218, 144, 165, 1);
+    border: none;
+    color: white;
+    height: 35px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.divider {
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid black;
+    
+}
+.divider span {
+    padding: 0 10px;
+}
+
+button:hover{
+    
+    background-color: rgba(170, 70, 107, 1);
+    color: rgb(129, 46, 81);
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
